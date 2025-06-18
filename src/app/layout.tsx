@@ -29,19 +29,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
           disableTransitionOnChange
+          forcedTheme="dark"
         >
-          <div className="min-h-screen bg-gradient-to-b from-gray-900 via-[#0B0F18] to-black text-white">
+          <main className="relative">
             <Header />
             {children}
-          </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>

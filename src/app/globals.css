@@ -76,6 +76,7 @@
   --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
   --sidebar-border: oklch(0.928 0.006 264.531);
   --sidebar-ring: oklch(0.707 0.022 261.325);
+  color-scheme: dark;
 }
 
 .dark {
@@ -119,4 +120,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Estilos globais para garantir o background escuro */
+html {
+  background: linear-gradient(to bottom, #111827, #0B0F18, #000000) fixed;
+  min-height: 100%;
+}
+
+body {
+  background: transparent !important;
+  min-height: 100vh;
 }
