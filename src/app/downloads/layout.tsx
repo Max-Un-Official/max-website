@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { Header } from "@/components/header";
 
 const geistSans = Geist({
@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Max Não-Oficial",
-  description: "Sua experiência personalizada para acompanhar suas séries e filmes favoritos da Max",
+  title: "Max Não-Oficial | Downloads",
+  description: "Downloads da aplicação Max Não-Oficial",
   icons: {
     icon: "/icons/favicon.ico",
   },

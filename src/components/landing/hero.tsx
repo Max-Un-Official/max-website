@@ -4,10 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-zinc-950 flex items-center justify-center overflow-hidden">
-      {/* Gradiente de fundo */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-950/30 via-zinc-950 to-zinc-950"></div>
-      
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Efeito de partículas/luzes */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-700/20 rounded-full blur-3xl"></div>
@@ -26,13 +23,14 @@ export function Hero() {
             <Button 
               className="bg-purple-700 hover:bg-purple-600 text-white px-8 py-6 text-lg rounded-full transition-all duration-300 shadow-lg shadow-purple-700/30"
             >
-              Começar Agora
+              <a href="/downloads">Começar Agora</a>
             </Button>
             <Button 
+              asChild
               variant="outline"
-              className="border-purple-700 text-purple-200 hover:bg-purple-700/20 px-8 py-6 text-lg rounded-full transition-all duration-300"
+              className="bg-purple border-purple-700 text-purple-200 hover:bg-purple-700/20 px-8 py-6 text-lg rounded-full transition-all duration-300"
             >
-              Saiba Mais
+              <a href="https://github.com/Max-Un-Official/max">Saiba Mais</a>
             </Button>
           </div>
         </div>
