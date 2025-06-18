@@ -82,7 +82,7 @@ export default function Team() {
                       asChild
                       className="bg-purple-700 hover:bg-purple-600 transition-colors"
                       >
-                        <a href="https://r0r17.com.br" target="_blank" rel="noopener noreferrer">
+                        <a href="https://portifolio-production-2e56.up.railway.app" target="_blank" rel="noopener noreferrer">
                         <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"> 
                             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm5-13.308V16h-3v-4.308h-2v-3h2V8h3v3h2.692z"/>
                         </svg>
